@@ -1,0 +1,17 @@
+@import '../../../../../styles.scss';
+
+.container-home{
+  background: $boston-linar;
+  height: 100vh;
+}
+
+.container-text{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  font-family: sans-serif;
+}
+
+.container-text h1{
+  color: $boston-blue-100;
+}

@@ -1,0 +1,48 @@
+<div class="back py-5">
+  <div class="container container-register h-75 w-50 rounded shadow">
+    <div class="row">
+      <div class="container-form col p-5 rounded">
+        <div class="text-end">
+          <img src="../../../../../assets/Images/logo_trans.png" width="48" alt="">
+        </div>
+        <h2 class="text-rosa fw-bold text-center py-5">Regístrate en SportEstre</h2>
+
+        <!-- Register form -->
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+          <div class="md-4">
+            <label for="name" class="text-rosa form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" formControlName="name" placeholder="">
+          </div>
+          <div class="md-4">
+            <label for="lastName" class="text-rosa form-label">Apellido</label>
+            <input type="text" class="form-control" id="lastName" formControlName="lastName" placeholder="">
+          </div>
+          <div class="md-4">
+            <label for="email" class="text-rosa form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" formControlName="email" placeholder="">
+          </div>
+          <div class="md-4">
+            <label for="password" class="form-label text-rosa">Contraseña</label>
+            <input type="password" class="form-control" id="password" formControlName="password" placeholder="">
+          </div>
+          <div class="md-4">
+            <label for="phoneNumber" class="form-label text-rosa">Número de teléfono</label>
+            <input type="tel" class="form-control" id="phoneNumber" formControlName="phoneNumber" placeholder="">
+          </div>
+          <div class="md-4 form-check my-2">
+            <input type="checkbox" id="agreeTerms" formControlName="agreeTerms" class="form-check-input" required>
+            <label for="agreeTerms" class="text-rosa form-check-label text-rosa">Acepto los términos y condiciones</label>
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" style="background-color: #007BFF !important;" class="btn btn-primary">Registrarse</button>
+          </div>
+
+          <div class="my-3">
+            <span class="text-rosa">¿Ya tienes una cuenta?  <a style="color: #007BFF;" routerLink="/login">Inicia sesión</a></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

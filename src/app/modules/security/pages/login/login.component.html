@@ -1,0 +1,69 @@
+<div class="back py-5">
+  <div class="container container-login h-75 w-50 rounded shadow">
+    <div class="row">
+      <div class="container-form col p-5 rounded">
+        <div class="text-end">
+          <img src="../../../../../assets/Images/logo_trans-v2-2.png" width="60" alt="">
+        </div>
+        <h2 class="text-rosa fw-bold text-center py-5">Bienvenido a SportEstre</h2>
+
+        <!-- Login form-->
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="md-4">
+            <label for="email" class="text-rosa form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="" formControlName="email">
+          </div>
+          <div class="md-4">
+            <label for="password" class="form-label text-rosa">Contraseña</label>
+            <input type="password" class="form-control" id="password" placeholder="" formControlName="password">
+          </div>
+          <div class="md-4 form-check my-2">
+            <input type="checkbox" name="connected" class="form-check-input" id="" formControlName="rememberMe">
+            <label for="connected" class="text-rosa form-check-label text-rosa">Recuérdame</label>
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" style="background-color: #007BFF !important;" class="btn btn-primary">
+              Iniciar Sesión
+            </button>
+          </div>
+
+          <div class="my-3">
+            <span class="text-rosa"> Eres un nuevo usuario? <a routerLink="/register">Regístrate</a> </span>
+          </div>
+
+          <span><a href="#">Recuperar contraseña</a></span>
+        </form>
+
+        <!--Login con redes sociales-->
+        <div class="container w-100 my-5">
+          <div class="row text-center">
+            <div class="col-12">Iniciar sesión</div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button (click)="loginWithGoogle()" type="button" class="btn btn-outline-danger w-100 my-2">
+                <div class="row aling-intems-center">
+                  <div class="col-2 d-none d-md-block ">
+                    <img src="../../../../../assets/Images/google.png" width="32" alt="">
+                  </div>
+                  <div class="col-12 col-md-10 text-center">Google</div>
+                </div>
+              </button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-outline-primary w-100 my-2">
+                <div class="row aling-intems-center">
+                  <div class="col-2 d-none d-md-block ">
+                    <img src="../../../../../assets/Images/facebook.png" width="32" alt="">
+                  </div>
+                  <div class="col-12 col-md-10 text-center">Facebook</div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

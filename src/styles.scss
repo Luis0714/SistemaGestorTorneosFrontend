@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
+$boston-blue-50: #f1f9fa;
+$boston-blue-100: #dbecf2;
+$boston-blue-200: #bbdbe6;
+$boston-blue-300: #8cc1d4;
+$boston-blue-400: #559dbb;
+$boston-blue-500: #4090b2; // Main color
+$boston-blue-600: #336a87;
+$boston-blue-700: #2f576f;
+$boston-blue-800: #2d4a5d;
+$boston-blue-900: #293f50;
+$boston-blue-950: #172735;
+$boston-rose-500: #F4C7EE;
+$boston-linar: linear-gradient(to right, #4090b2,#F4C7EE);  
+
+h1,h2{
+  color: $boston-blue-800;
+}
+

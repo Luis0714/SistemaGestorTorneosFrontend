@@ -1,0 +1,52 @@
+@import '../../../../../styles.scss';
+
+.container-header {
+  background: $boston-linar;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.user-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3498db; /* Color de fondo del icono, puedes cambiarlo según tus preferencias */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Color del texto, puedes cambiarlo según tus preferencias */
+  font-size: 15px; /* Tamaño del texto, puedes cambiarlo según tus preferencias */
+  font-weight: bold;
+}
+
+.container-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 40px;
+}
+
+.nav-link {
+  color: #fff;
+  margin-right: 10px; /* Ajusta el margen según tus necesidades */
+}
+
+.nav-link:hover {
+  color: #f1c40f; /* Cambia el color del texto al pasar el mouse por encima */
+}
+
+.nav-options{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  border-color: #3498db;
+}

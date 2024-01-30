@@ -1,0 +1,29 @@
+@import '../../../../../styles.scss';
+.container-home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: $boston-linar;
+  width: 100%;
+  height: 100vh;
+
+  .welcome-text{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+  }
+
+  .welcome-text h1{
+    margin: 0;
+    color: $boston-blue-800;
+  }
+  h1 {
+    color: white;
+  }
+
+  h3{
+    color: $boston-blue-600;
+  }
+}
